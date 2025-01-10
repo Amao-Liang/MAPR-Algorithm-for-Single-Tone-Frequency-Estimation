@@ -18,12 +18,13 @@ function omega_MAPR = MAPR(x, N, all_coefficients)
     kmax = floor((N - 1) / 2); % Maximum lag
     values = zeros(1, kmax - 1);
     
-    for k = 2:kmax % Corresponding to (28) in our paper. The index is from 1 to (kmax - 1)
+    for k = 2:kmax % Corresponding to (28) in our paper, where k is from 2 to k_{max}
+    % The index in MATLAB starts at 1, so k is deducted by 1
         values(k - 1) = M(coarse_estimate, k) / ((N - 2 * k)^2 * I(coarse_estimate, k)^2);
     end
     
     [~, k_star] = min(values); 
-    % Index plus 1 is the optimal k
+    % Index plus 1 is the corresponding optimal k
     k_star = k_star + 1; % The optimal lag (k_star)
     
     % Using the optimal k to calculate r_{k^*-1} and r_{k^*}
