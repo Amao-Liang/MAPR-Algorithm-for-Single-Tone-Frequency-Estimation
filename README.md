@@ -6,5 +6,5 @@
  
  Then, run the ‘simple_test’ programme and the performance results of the MAPR estimator will be printed. Please feel free to try other different sets of parameters.
  ## Corresponding Reference
- H.-C. Liang and H. C. So, ``Single-tone frequency estimation using modified autocorrelation and polynomial root-finding,'' Signal Processing, accepted.
+ H.-C. Liang and H. C. So, ``Single-tone frequency estimation using modified autocorrelation and polynomial root-finding''.
 
